@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+
+    /* Primary */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* Neutral */
+    --Very--Dark--Blue: hsl(234, 12%, 34%);
+    --Grayish--Blue: hsl(229, 6%, 66%);
+    --Very--Light--Gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: var(--Grayish--Blue);
+}
+
+body {
+    background-color: var(--Very--Light--Gray);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+header {
+    text-align: center;
+}
+
+header h1, h2 {
+    font-size: 28px;
+}
+
+header h1 {
+    font-weight: 200;
+}
+
+header h2 {
+    font-weight: 600;
+    color: var(--Very--Dark--Blue);
+}
+
+header p {
+    max-width: 430px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 8px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: right;
+}
+
+.boxText {
+    text-align: left;
+    padding-bottom: 45px;
+    background-color: white;
+}
+
+.boxText p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.box1 {
+    border-top: 5px solid var(--Cyan);
+}
+
+.box2 {
+    border-top: 5px solid var(--Red);
+}
+
+.box3 {
+    border-top: 5px solid var(--Orange);
+}
+
+.box4 {
+    border-top: 5px solid var(--Blue);
+}
+
+.boxText h4 {
+    font-size: 18px;
+    color: var(--Very--Dark--Blue);
+    margin-bottom: 8px;
+}
+
+.boxContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.box1, .box4 {
+    align-self: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  @media only screen and (max-width: 375px){
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    header h1, h2 {
+        font-size: 20px;
+    }
+
+    header p {
+        max-width: 250px;
+        font-size: 12px;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .boxText {
+        padding-bottom: 30px;
+    }
+
+    .boxText p {
+        max-width: 210px;
+        font-size: 11px;
+    }
+
+    .attribution a {
+        font-size: 11px;
+    }
+  }
